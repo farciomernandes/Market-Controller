@@ -3,6 +3,10 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+/**
+ * Este arquivo é responsável pela interface e métodos da entidade Java da aplicação.
+ */
+
 public class Office {
     private String nome;
     private String sexo;
@@ -46,6 +50,7 @@ public class Office {
 
     public void setOffice(Office new_office){
         offices.add(new_office);
+        System.out.printf("Chegou aqui carai %s", offices.get(0));
         JOptionPane.showMessageDialog(null, "Funcionário cadastrado com sucesso!");
     }
 
@@ -53,5 +58,6 @@ public class Office {
         System.out.printf("ALOU");
             JOptionPane.showMessageDialog(null, offices.get(0));
             System.out.print(offices.get(0));
-        }    
+        }   
+    
 }
